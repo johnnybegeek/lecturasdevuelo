@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Lecturas de Vuelo</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <p>Bienvenidos a Lectuas de vuelo: artículos a baja altitud.
-
-        Esta es una linea desde lmde.
-    </p>
-    <a href="sobre-mi.html">Sobre mí</a>
+    <header class="header-fijo">
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#archivo">Archivo</a></li>
+                <li><a href="#wip">WIP</a></li>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Hola mundo</h1>
+        <p>Bienvenidos a Lecturas de vuelo: artículos a baja altitud.<br>
+           Esta es una línea desde LMDE.
+        </p>
+        <a href="sobre-mi.html">Sobre mí</a>
+    </main>
+    <script>
+        // JavaScript para el menú hamburguesa
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu-principal ul').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

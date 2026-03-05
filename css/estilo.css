@@ -1,14 +1,85 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: green; /* Color verde para el texto principal */
+/* Estilos para la barra de navegación fija */
+.header-fijo {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: red;
-    font-weight: 700; /* Asegura que use la negrita */}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto en escritorio */
+}
 
+.menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
 
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.menu-principal a:hover {
+    background: #555;
+    border-radius: 4px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón en móviles */
+    }
+
+    .menu-principal ul {
+        display: none; /* Oculta los enlaces por defecto en móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu-principal ul.active {
+        display: flex; /* Muestra los enlaces al hacer clic */
+    }
+
+    .menu-principal a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+}
+
+/* Espaciado para el contenido principal */
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
