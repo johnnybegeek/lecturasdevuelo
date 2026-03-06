@@ -183,3 +183,15 @@ a:hover {
         border-top: 1px solid #444;
     }
 }
+
+/* ajustes para el logotipo */
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 1em;
+    width: auto;
+}
