@@ -2,8 +2,8 @@
 .header-fijo {
     position: sticky;
     top: 0;
-    background: #0F499A;
-    color: #F7CC2D;
+    background: #0F499A; /* Fondo azul por defecto */
+    color: #F7CC2D; /* Color del texto por defecto */
     padding: 10px 20px;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -11,6 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s; /* Transición suave para el fondo de la barra */
+}
+
+.header-fijo:hover {
+    background: #F7CC2D; /* Cambia el fondo de la barra al pasar el mouse */
 }
 
 .menu-toggle {
