@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     background: #0F499A; /* Fondo azul por defecto */
-    color: #F7CC2D; /* Color del texto por defecto */
+    color: #F8E7A5; /* Color del texto por defecto */
     padding: 10px 20px;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -15,7 +15,7 @@
 }
 
 .header-fijo:hover {
-    background: #F7CC2D; /* Cambia el fondo de la barra al pasar el mouse */
+    background: #F8E7A5; /* Cambia el fondo de la barra al pasar el mouse */
 }
 
 .menu-toggle {
@@ -37,7 +37,7 @@
 
 .menu-principal a {
     background-color: #0F499A; /* Fondo azul por defecto */
-    color: #F7CC2D; /* Texto amarillo por defecto */
+    color: #F8E7A5; /* Texto amarillo por defecto */
     text-decoration: none;
     font-weight: 700;
     padding: 5px 10px;
@@ -46,7 +46,7 @@
 }
 
 .menu-principal a:hover {
-    background-color: #F7CC2D; /* Fondo amarillo al pasar el mouse */
+    background-color: #F8E7A5; /* Fondo amarillo al pasar el mouse */
     color: #0F499A; /* Texto azul al pasar el mouse */
 }
 
@@ -83,7 +83,7 @@ body {
     margin: 0;
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: #F5F5DC; /* Blanco hueso para el fondo */
+    background-color: #F0F4F8; /* Azul hielo para el fondo */
     color: #333333; /* Texto principal en gris oscuro */
 }
 
@@ -101,8 +101,8 @@ h1, h2, h3 {
 
 /* Estilos para enlaces */
 a {
-    background-color: #0F499A; /* Fondo azul por defecto */
-    color: #F7CC2D; /* Texto amarillo por defecto */
+    background-color: #E6F2FF; /* Fondo azul celeste muy claro por defecto */
+    color: #0F499A; /* Texto azul oscuro por defecto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     padding: 2px 4px; /* Espacio alrededor del texto */
     border-radius: 3px; /* Bordes redondeados para los enlaces */
@@ -111,7 +111,7 @@ a {
 
 /* Estilo para los enlaces al pasar el mouse */
 a:hover {
-    background-color: #F7CC2D; /* Fondo amarillo al pasar el mouse */
-    color: #0F499A; /* Texto azul al pasar el mouse */
+    background-color: #F8E7A5; /* Fondo amarillo al pasar el mouse */
+    color: #0F499A; /* Texto azul celeste muy claro al pasar el mouse */
     text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
 }
