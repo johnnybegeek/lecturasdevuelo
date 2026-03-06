@@ -94,17 +94,17 @@ h1, h2, h3 {
 
 /* Estilos para enlaces */
 a {
-    color: #F7CC2D; /* Amarillo para los enlaces */
-    text-decoration: none; /* Opcional: quita el subrayado de los enlaces */
-    padding: 2px 4px; /* Espacio alrededor del texto para mejor visualización del fondo */
+    background-color: #0F499A; /* Fondo azul por defecto */
+    color: #F7CC2D; /* Texto amarillo por defecto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 2px 4px; /* Espacio alrededor del texto */
     border-radius: 3px; /* Bordes redondeados para los enlaces */
     transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios */
 }
 
 /* Estilo para los enlaces al pasar el mouse */
 a:hover {
-    background-color: #0F499A; /* Fondo azul al pasar el mouse */
-    color: #F7CC2D; /* Texto amarillo para contraste */
+    background-color: #F7CC2D; /* Fondo amarillo al pasar el mouse */
+    color: #0F499A; /* Texto azul al pasar el mouse */
     text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
 }
-
