@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Lecturas de Vuelo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Metadatos de la página -->
+    <title>Lecturas de Vuelo</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <meta charset="utf-8"> <!-- Define la codificación de caracteres para la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Enlace al archivo de estilos CSS -->
 </head>
 <body>
+    <!-- Cabecera con logotipo y título -->
     <div class="logo-header">
-        <img src="../paginas/imagenes/logoblog.avif" alt="Logotipo de Lecturas de Vuelo" class="logo-img">
-        <h1>Lecturas de Vuelo</h1>
+        <img src="../paginas/imagenes/logoblog.avif" alt="Logotipo de Lecturas de Vuelo" class="logo-img"> <!-- Logotipo del sitio -->
+        <h1>Lecturas de Vuelo</h1> <!-- Título principal del sitio -->
     </div>
-    <p>Artículos a baja altitud</p>
+    <p>Artículos a baja altitud</p> <!-- Eslogan o descripción del sitio -->
+
+    <!-- Barra de navegación superior fija -->
     <header class="header-fijo">
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button> <!-- Botón del menú hamburguesa para móviles -->
         <nav class="menu-principal">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="paginas/wip.html">WIP</a></li>
-                <li><a href="paginas/pruebas.html">Archivo</a></li>
-                <li><a href="paginas/pruebas.html">Recursos</a></li>
-                <li><a href="paginas/pruebas.html">Bitácora</a></li>
+                <li><a href="index.html">Home</a></li> <!-- Enlace a la página principal -->
+                <li><a href="paginas/wip.html">WIP</a></li> <!-- Enlace a la sección de proyectos en proceso -->
+                <li><a href="paginas/pruebas.html">Archivo</a></li> <!-- Enlace a la sección de archivo -->
+                <li><a href="paginas/pruebas.html">Recursos</a></li> <!-- Enlace a la sección de recursos -->
+                <li><a href="paginas/pruebas.html">Bitácora</a></li> <!-- Enlace a la bitácora o blog -->
             </ul>
         </nav>
     </header>
+
+    <!-- Contenido principal de la página -->
     <main>
-        <br>
-        <h2><a href="paginas/pruebas.html">WIP</a></h2>
-        <p>Aquí encontrarás ideas que aún están tomando forma y proyectos en desarrollo que quiero compartir contigo.
-        </p>
-        <h2><a href="paginas/pruebas.html">Recursos</a></h2>
-        <p>En este espacio comparto recursos online que me resultan útiles y que quizás pueden servirte de ayuda.
-        </p>
-        <h2><a href="paginas/pruebas.html">Archivo</a></h2>
-        <p>Si buscas inspiración, referencias o simplemente quieres echar un vistazo a lo que he completado,
-        este es el lugar.
-        </p>
-        <h2><a href="paginas/pruebas.html">Bitácora</a></h2>
-        <p>Es un espacio para ideas en movimiento, artículos temporales, reflexiones y
-            pensamientos que surgen en el camino.
-        </p>
+        <h2><a href="paginas/pruebas.html">WIP</a></h2> <!-- Sección de proyectos en proceso -->
+        <p>Aquí encontrarás ideas que aún están tomando forma y proyectos en desarrollo que quiero compartir contigo.</p> <!-- Descripción de WIP -->
+
+        <h2><a href="paginas/pruebas.html">Recursos</a></h2> <!-- Sección de recursos -->
+        <p>En este espacio comparto recursos online que me resultan útiles y que quizás pueden servirte de ayuda.</p> <!-- Descripción de Recursos -->
+
+        <h2><a href="paginas/pruebas.html">Archivo</a></h2> <!-- Sección de archivo -->
+        <p>Si buscas inspiración, referencias o simplemente quieres echar un vistazo a lo que he completado, este es el lugar.</p> <!-- Descripción de Archivo -->
+
+        <h2><a href="paginas/pruebas.html">Bitácora</a></h2> <!-- Sección de bitácora o blog -->
+        <p>Es un espacio para ideas en movimiento, artículos temporales, reflexiones y pensamientos que surgen en el camino.</p> <!-- Descripción de Bitácora -->
+        <br> <!-- Salto de línea para espacio -->
     </main>
+
+    <!-- Barra de navegación inferior fija -->
     <footer class="footer-fijo">
-        <button class="footer-menu-toggle" aria-label="Abrir menú">☰</button>
+        <button class="footer-menu-toggle" aria-label="Abrir menú">☰</button> <!-- Botón del menú hamburguesa para móviles en el footer -->
         <nav class="menu-footer">
             <ul>
-                <li><a href="paginas/pruebas.html">Quién</a></li>
-                <li><a href="paginas/pruebas.html">¿Por qué?</a></li>
-                <li><a href="paginas/pruebas.html">Créditos</a></li>
+                <li><a href="paginas/pruebas.html">Quién</a></li> <!-- Enlace a información sobre el autor -->
+                <li><a href="paginas/pruebas.html">¿Por qué?</a></li> <!-- Enlace a la motivación o propósito del sitio -->
+                <li><a href="paginas/pruebas.html">Créditos</a></li> <!-- Enlace a los créditos o agradecimientos -->
             </ul>
         </nav>
     </footer>
+
+    <!-- Scripts para la funcionalidad del menú -->
     <script>
         // JavaScript para el menú hamburguesa del header
         document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.menu-principal ul').classList.toggle('active');
+            document.querySelector('.menu-principal ul').classList.toggle('active'); // Alterna la clase 'active' para mostrar/ocultar el menú principal
         });
 
         // JavaScript para el menú hamburguesa del footer
         document.querySelector('.footer-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.menu-footer ul').classList.toggle('active');
+            document.querySelector('.menu-footer ul').classList.toggle('active'); // Alterna la clase 'active' para mostrar/ocultar el menú del footer
         });
     </script>
 </body>
