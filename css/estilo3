@@ -6,7 +6,7 @@
 }
 
 .logo-img {
-    height: 2em; /* Altura del logotipo */
+    height: 6em; /* Altura del logotipo */
     width: auto; /* Ancho automático para mantener la proporción */
 }
 
@@ -193,73 +193,7 @@ a:hover {
         padding: 15px; /* Espacio alrededor del texto en móviles */
         border-top: 1px solid #444; /* Borde superior para separar elementos */
     }
-}
-/* Estilos para la barra de navegación fija en el footer */
-.footer-fijo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #0F499A;
-    color: #F8E7A5;
-    padding: 10px 20px;
-    z-index: 100;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    font-family: 'Verdana', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-}
 
-.footer-fijo:hover {
-    background: #F8E7A5;
-}
-
-.menu-footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 30px;
-}
-
-.menu-footer a {
-    background-color: #0F499A;
-    color: #F8E7A5;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.menu-footer a:hover {
-    background-color: #F8E7A5;
-    color: #0F499A;
-}
-
-/* Ajustes para móviles del footer */
-@media (max-width: 600px) {
-    .menu-footer ul {
-        display: none; /* Oculto por defecto en móviles */
-        flex-direction: column;
-        position: absolute;
-        bottom: 60px; /* Asegúrate de que esté por encima del footer */
-        left: 0;
-        width: 100%;
-        background: #0F499A;
-        padding: 0;
-        text-align: center;
-    }
-
-    .menu-footer ul.active {
-        display: flex; /* Muestra los enlaces al hacer clic */
-    }
-
-    .menu-footer a {
-        padding: 15px;
-        border-top: 1px solid #444;
-    }
 
     /* Estilo para el botón del menú del footer */
     .footer-menu-toggle {
