@@ -51,10 +51,16 @@
         </nav>
     </footer>
     <script>
-        // JavaScript para el menú hamburguesa
+        // JavaScript para el menú hamburguesa superior
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.menu-principal ul').classList.toggle('active');
         });
+
+             // JavaScript para el menú hamburguesa del footer
+        document.querySelector('.footer-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu-footer ul').classList.toggle('active');
+        });
     </script>
+
 </body>
 </html>
