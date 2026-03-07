@@ -7,7 +7,7 @@
     padding: 10px 20px;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-family: 'arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@
 body {
     margin: 0;
     padding-top: 20px;
-    font-family: 'arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     background-color: #F0F4F8; /* Azul hielo para el fondo */
     color: #333333; /* Texto principal en gris oscuro */
 }
@@ -126,7 +126,7 @@ a:hover {
     padding: 10px 20px;
     z-index: 100;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    font-family: 'arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +192,6 @@ a:hover {
 }
 
 .logo-img {
-    height: 1em;
+    height: 2em;
     width: auto;
 }
